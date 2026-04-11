@@ -3,7 +3,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from io import BytesIO
-from typing import BinaryIO
+from typing import BinaryIO, List
 
 from pypdf import PdfReader
 
@@ -15,7 +15,7 @@ class PageDocument:
 
 @dataclass
 class ParsedDocument:
-    souce: str
+    source: str
     full_text: str
     pages: List[PageDocument]
     total_pages: int

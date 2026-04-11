@@ -1,9 +1,6 @@
 # Import 
 import streamlit as st
 import time
-# SRC/ Functions Utils:
-import sys
-sys.path.append('../src')
 from src.ingestion.pdf_parser import parse_pdf
 
 st.set_page_config(page_title = 'Document RAG Assistant', layout = 'wide')
@@ -19,7 +16,7 @@ uploaded_file = st.file_uploader('Upload a PDF', type = ['pdf'])
 if uploaded_file is not None:
   parsed_doc = parse_pdf(uploaded_file, source_name = uploaded_file.name)
 
-st.sucess(f'PDF uploaded successfully. Pages read: {parsed_doc.total_pages}')
+st.success(f'PDF uploaded successfully. Pages read: {parsed_doc.total_pages}')
 st.subheader('Preview of the extracted text')
 st.text_area(
   'Extracted content',
