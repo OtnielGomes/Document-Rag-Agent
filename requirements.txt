@@ -1,0 +1,9 @@
+streamlit
+pandas
+pypdf
+langgraph
+langchain
+langchain-core
+databricks-sdk
+databricks-sql-connector
+python-dotenv
