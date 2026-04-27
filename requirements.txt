@@ -1,9 +1,9 @@
 streamlit
 pandas
-pypdf
+pymupdf
 langgraph
 langchain
-langchain-core
-databricks-sdk
-databricks-sql-connector
-python-dotenv
+langchain-chroma
+chromadb
+langchain-ollama
+langchain-text-splitters

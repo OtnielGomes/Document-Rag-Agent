@@ -1,15 +1,15 @@
-# Imports 
-from typing import TypedDict, List, Optional
+# Imports: 
+from typing import Any, List, TypedDict
 
+# GraphState
 class GraphState(
     TypedDict,
     total = False
 ):
     question: str
-    document_text: str
-    chunks: List[str]
-    retrieved_chunks: List[str]
+    source: str
+    retrieved_docs: List[Any]
     answer: str
-    sources: List[str]
-    latency_ms: float
-    error: Optional[str]
+    retrieval_latency: float
+    generation_latency: float
+    total_latency: float

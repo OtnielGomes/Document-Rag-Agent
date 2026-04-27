@@ -1,0 +1,20 @@
+[
+  {
+    "document": "Otniel_-_Dados.pdf",
+    "question": "Quem é Otniel?",
+    "expected_answer_hint": "Cientista de dados/estudante de Data Science",
+    "expected_topics": ["perfil profissional", "formação", "contato"]
+  },
+  {
+    "document": "Otniel_-_Dados.pdf",
+    "question": "Quais linguagens ou áreas de conhecimento aparecem no currículo?",
+    "expected_answer_hint": "Banco de dados, SQL, lógica de programação, Python",
+    "expected_topics": ["habilidades", "conhecimentos"]
+  },
+  {
+    "document": "Topicos_de_Big_Data.pdf",
+    "question": "Quais tipos de IA o documento cita?",
+    "expected_answer_hint": "IA simbólica e IA subsimbólica",
+    "expected_topics": ["inteligência artificial", "conceitos"]
+  }
+]
