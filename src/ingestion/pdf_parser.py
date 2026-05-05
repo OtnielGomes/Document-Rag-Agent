@@ -5,19 +5,26 @@ import unicodedata
 import pymupdf
 
 # Data Classe
+
+@dataclass
+class ParsedPage:
+    page_number: int
+    text: str
+    extraction_method: str
+
 @dataclass
 class ParsedDocument:
     source_name: str
     full_text: str
-    pages: list[str]
+    pages: list[ParsedPage]
     total_pages: int
 
 # List Of 
-PRIVATE_USE_AND_REPLACEMENT_PATTERN = r"[\uE000-\uF8FF\uFFF0-\uFFFF ]"
+PRIVATE_USE_AND_REPLACEMENT_PATTERN = r"[\uE000-\uF8FF\uFFF0-\uFFFF]"
 ZERO_WIDTH_PATTERN = r"[\u200B-\u200D\uFEFF]"
 ASCII_CONTROL_PATTERN = r"[\x00-\x08\x0B\x0C\x0E-\x1F\x7F]"
 EXCESS_SYMBOLS_PATTERN = r"[■□▪◆◦●◼◻]"
-BAD_LINE_CHARS_PATTERN = r"[^\w\sÀ-ÿ.,;:!?()/%+\-–—&·]"
+BAD_LINE_CHARS_PATTERN = r"[^\w\sÀ-ÿ@.,;:!?()/%+\-–—&·/#]"
 COMMON_LIGATURES = {
     "ﬁ": "fi",
     "ﬂ": "fl",
@@ -136,7 +143,7 @@ def drop_noise_lines(lines: list[str]) -> list[str]:
             continue
 
         weird_ratio = sum(
-            not (ch.isalnum() or ch.isspace() or ch in ".,;:!?()/%+-&·")
+            not (ch.isalnum() or ch.isspace() or ch in ".,;:!?()/%+-&·/@#:_")
             for ch in stripped
         ) / max(len(stripped), 1)
 
@@ -219,52 +226,74 @@ def extract_page_text_ocr(
     textpage = page.get_textpage_ocr(dpi = 300, full = True)
     text = page.get_text("text", textpage = textpage, sort = True)
     return clean_text(text)
+# Is text usable
+def is_text_usable(
+    text: str,
+    min_chars: int = 40
+) -> bool:
+
+    if not text:
+        return False
+
+    cleaned = text.strip()
+
+    if len(cleaned) < min_chars:
+        return False
+
+    alnum_ratio = sum(ch.isalnum() for ch in cleaned) / max(len(cleaned), 1)
+    return alnum_ratio > 0.45
 
 # Extract Page Text
 def extract_page_text(
     page
-) -> str:
-    
+) -> tuple[str, str]:
+
     text = extract_page_text_native(page)
 
-    if len(text.strip()) >= 40:
-        return text
-    
+    if is_text_usable(text):
+        return text, "native"
+
     text = extract_page_text_blocks(page)
 
-    if len(text.strip()) >= 40:
-        return text
-    
+    if is_text_usable(text):
+        return text, "blocks"
+
     try:
         text = extract_page_text_ocr(page)
-        return text
-    
+        return text, "ocr"
     except Exception:
-        return text
+        return text, "failed_ocr"
 
 def parse_pdf(
-    uploaded_file, 
+    uploaded_file,
     source_name: str
 ) -> ParsedDocument:
 
     pdf_bytes = uploaded_file.getvalue()
-    doc = pymupdf.open(stream = pdf_bytes, filetype = 'pdf')
+    doc = pymupdf.open(stream=pdf_bytes, filetype="pdf")
 
     pages = []
 
     try:
         for page in doc:
-            page_text = extract_page_text(page)
-            pages.append(page_text)
+            page_text, extraction_method = extract_page_text(page)
+
+            pages.append(
+                ParsedPage(
+                    page_number=page.number + 1,
+                    text=page_text,
+                    extraction_method=extraction_method,
+                )
+            )
     finally:
         doc.close()
 
-    full_text = '\n\n'.join(page for page in pages if page.strip())
+    full_text = "\n\n".join(page.text for page in pages if page.text.strip())
     full_text = clean_text(full_text)
 
     return ParsedDocument(
-        source_name = source_name,
-        full_text = full_text,
-        pages = pages,
-        total_pages = len(pages),
+        source_name=source_name,
+        full_text=full_text,
+        pages=pages,
+        total_pages=len(pages),
     )

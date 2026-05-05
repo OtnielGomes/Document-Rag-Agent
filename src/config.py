@@ -10,9 +10,9 @@ LOGS_DIR = BASE_DIR / 'logs'
 CHROMA_DIR = DATA_DIR / 'chroma'
 METRICS_FILE = LOGS_DIR / 'rag_runs.jsonl'
 
-TOP_K_RESULTS = int(os.getenv('TOP_K_RESULTS', '15'))
-CHUNK_SIZE = int(os.getenv('CHUNK_SIZE', '1500'))
-CHUNK_OVERLAP = int(os.getenv('CHUNK_OVERLAP', '300'))
+TOP_K_RESULTS = int(os.getenv('TOP_K_RESULTS', '10')) # 10
+CHUNK_SIZE = int(os.getenv('CHUNK_SIZE', '1000')) # 1200
+CHUNK_OVERLAP = int(os.getenv('CHUNK_OVERLAP', '150')) # 180
 
 # Ensure Directories
 def ensure_directories() -> None:
