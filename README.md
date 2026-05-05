@@ -19,11 +19,11 @@
     <br/>
     <a href="https://github.com/OtnielGomes/Document-Rag-Agent/tree/main/src"><strong>Explore the Docs and Functions »</strong></a>
     <br/><br/>
-    <a href="https://github.com/OtnielGomes/Churn-Prediction-Credit-Card/tree/main/notebooks">View Notebooks</a>
+    <a href="https://github.com/OtnielGomes/Document-Rag-Agent/blob/main/app.py">View app.py</a>
     ·
-    <a href="https://github.com/OtnielGomes/Churn-Prediction-Credit-Card/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/OtnielGomes/Document-Rag-Agent/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/OtnielGomes/Churn-Prediction-Credit-Card/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/OtnielGomes/Document-Rag-Agent/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -70,6 +70,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+### RAG-Based Question Answering System
+
+I developed a question answering system for **PDF** documents using **RAG (Retrieval-Augmented Generation)**, with a focus on retrieving relevant content snippets and generating more accurate answers based on the document context.
+
+The project was built with **Python**, **Streamlit**, **LangChain**, **ChromaDB**, and **PyMuPDF**, including document ingestion, text chunking, semantic search, and context-aware answer generation.
+
+In addition to the core architecture, the system also included **manual evaluation** steps and **prompt rules** designed to reduce hallucinations and improve the reliability of the generated answers.
+
+---
 <br/>
 
 ## Project Description 
