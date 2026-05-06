@@ -71,23 +71,16 @@
 ## About The Project
 
 ### RAG-Based Question Answering System
+---
 
 I developed a question answering system for **PDF** documents using **RAG (Retrieval-Augmented Generation)**, with a focus on retrieving relevant content snippets and generating more accurate answers based on the document context.
 
 The project was built with **Python**, **Streamlit**, **LangChain**, **ChromaDB**, and **PyMuPDF**, including document ingestion, text chunking, semantic search, and context-aware answer generation.
 
-In addition to the core architecture, the system also included **manual evaluation** steps and **prompt rules** designed to reduce hallucinations and improve the reliability of the generated answers.
+The system also included **manual evaluation** steps and **prompt rules** designed to reduce hallucinations and improve the reliability of the generated answers.
 
----
+
 <br/>
-
-## Project Description 
-text  
-
----
-
-### Project Struture
-text
 
 ---
 
@@ -99,15 +92,13 @@ text
 ## Built With
 <br/>
 
-- [![Databricks][Databricks Free]][Databricks Free-url]
-- [![Language Python][Python]][Python-url]
-- [![Apache][Apache Spark]][Apache Spark-url]
-- [![PD][Pandas]][Pandas-url]
-- [![NP][NumPy]][NumPy-url]
-- [![Matplot][Matplotlib]][Matplotlib-url]
-- [![Scipy][Scipy]][Scipy-url]
-- [![Sklearn][scikit-learn]][scikit-learn-url]
-
+- [![Python][Python]][Python-url]
+- [![Streamlit][Streamlit]][Streamlit-url]
+- [![Langchain][Langchain]][Langchain-url]
+- [![LangGraph][LangGraph]][LangGraph-url]
+- [![Ollama][Ollama]][Ollama-url]
+- [![Pandas][Pandas]][Pandas-url]
+- [![VSCode][VSCode]][VSCode-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -118,7 +109,7 @@ text
 
 **Clone the repository**
 ```sh
-git clone https://github.com/OtnielGomes/Churn-Prediction-Credit-Card
+git clone https://github.com/OtnielGomes/Document-Rag-Agent
 ```
 <br/>
 
@@ -508,48 +499,44 @@ Distributed under the MIT License. See [`LICENSE.txt`](https://github.com/Otniel
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/OtnielGomes/Churn-Prediction-Credit-Card.svg?style=for-the-badge
-[contributors-url]: https://github.com/OtnielGomes/Churn-Prediction-Credit-Card/graphs/contributors
+[contributors-shield]: https://img.shields.io/github/contributors/OtnielGomes/Document-Rag-Agent.svg?style=for-the-badge
+[contributors-url]: https://github.com/OtnielGomes/Document-Rag-Agent/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/OtnielGomes/Churn-Prediction-Credit-Card.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/OtnielGomes/Document-Rag-Agent.svg?style=for-the-badge
 [forks-url]: https://github.com/OtnielGomes/Churn-Prediction-Credit-Card/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/OtnielGomes/Churn-Prediction-Credit-Card.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/OtnielGomes/Document-Rag-Agent.svg?style=for-the-badge
 [stars-url]: https://github.com/OtnielGomes/Churn-Prediction-Credit-Card/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/OtnielGomes/Churn-Prediction-Credit-Card.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/OtnielGomes/Document-Rag-Agent.svg?style=for-the-badge
 [issues-url]: https://github.com/OtnielGomes/Churn-Prediction-Credit-Card/issues
 
-[license-shield]: https://img.shields.io/github/license/OtnielGomes/Churn-Prediction-Credit-Card.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/OtnielGomes/Document-Rag-Agent.svg?style=for-the-badge
 [license-url]: https://github.com/OtnielGomes/Churn-Prediction-Credit-Card/blob/main/LICENSE
 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/otnielgomes
 
-[Azure Databricks]: https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=Databricks&logoColor=white
-[Azure Databricks-url]:  https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account?icid=databricks
+[Streamlit]: https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white
+[Streamlit-url]: https://streamlit.io/
 
 
-[scikit-learn]: https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white
-[scikit-learn-url]: https://scikit-learn.org/stable/
-
-[Apache Spark]: https://img.shields.io/badge/Apache%20Spark-FDEE21?style=flat-square&logo=apachespark&logoColor=black
-[Apache Spark-url]: https://spark.apache.org/
+[Langchain]: https://img.shields.io/badge/langchain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white
+[Langchain-url]: https://www.langchain.com/
 
 [Pandas]: https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white
 [Pandas-url]: https://pandas.pydata.org/
 
-[Matplotlib]: https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black
-[Matplotlib-url]: https://matplotlib.org/
+[VSCode]: https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white
+[VSCode-url]: https://code.visualstudio.com/
 
-[Scipy]: https://img.shields.io/badge/SciPy-%230C55A5.svg?style=for-the-badge&logo=scipy&logoColor=%white
-[Scipy-url]: https://scipy.org/
+[LangGraph]: https://img.shields.io/badge/langgraph-%231C3C3C.svg?style=for-the-badge&logo=langgraph&logoColor=white
+[LangGraph-url]: https://www.langchain.com/langgraph
 
-[NumPy]: https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white
-[NumPy-url]: https://numpy.org/
+[Ollama]: https://img.shields.io/badge/ollama-000000?style=for-the-badge&logo=ollama&logoColor=white
+[Ollama-url]: https://ollama.com/
 
 [Python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 [Python-url]: https://www.python.org/
 
-[Databricks Free]: https://img.shields.io/badge/Databricks-FF3621?style=for-the-badge&logo=Databricks&logoColor=white
-[Databricks Free-url]: https://www.databricks.com/br/learn/free-edition
+
