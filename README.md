@@ -108,7 +108,7 @@ git clone https://github.com/OtnielGomes/Document-Rag-Agent
 ```
 <br/>
 
-### 📌Development and Execution Environment
+## Development and Execution Environment
 
 
 The project was developed in **Visual Studio Code**, which was used as the main environment for programming, file organization, and application execution.
@@ -124,7 +124,7 @@ Below are the download and installation links for **VS Code** and **Ollama Deskt
 
 <br/>
 
-### Installation of Libraries
+## Installation of Libraries
 
 Open the terminal and run the following command to install the project libraries:
 
@@ -132,38 +132,72 @@ Open the terminal and run the following command to install the project libraries
 
 <br/>
 
-### Installation of Models
+## Ollama Setup
 
-Open the terminal and run the following command to install the project libraries:
+Start **Ollama Desktop** and then return to the terminal to download the models used in the project.
 
-`python -m pip install -r requirements.txt`
+Run the commands below in the following order:
 
-<br/>
-
-### Text
-- Text
-- Text
-
-### Text
-- Text
-- Text
-
-
-### Installation of Libraries
-
-The installation of the required libraries is performed using the command:
-
-```python
-%pip install '..\requirements.txt'
+```bash
+ollama pull mxbai-embed-large
+ollama pull qwen3-coder:480b-cloud
+ollama pull llama3.1
+ollama list
 ```
 
-This command is present in the first notebook of this project.
+## Models used
 
----
+In this project, we use **one local embedding model** and **two models for answer generation**.
 
-💡 **Note**:  
-- In Jupyter/Databricks notebooks, the `%pip` magic command installs packages directly into the current environment.  
-- If your `requirements.txt` file is located in a subdirectory or at a different path, make sure to update the path accordingly (e.g., `../requirements.txt`).
+### Embeddings
+
+The `mxbai-embed-large` model is responsible for transforming text chunks into numerical vectors that represent the semantic meaning of the content. Instead of generating answers like a traditional LLM, it is used to compare texts by similarity and retrieve the most relevant passages for each question. [ollama](https://ollama.com/library/mxbai-embed-large)
+
+### Answer generation
+
+For answer generation, the project was configured to work with the following models:
+
+- `qwen3-coder:480b-cloud`
+- `llama3.1`
+
+The `qwen3-coder:480b-cloud` model is a cloud-based option designed for coding tasks and long-context processing, running on Ollama’s remote infrastructure. [ollama](https://ollama.com/library/qwen3-coder:480b-cloud)
+
+The `llama3.1` model is a general-purpose language model available in Ollama for local execution. [ollama](https://ollama.com/library/llama3.1)
+
+## Project workflow
+
+The main workflow of this project was designed to use **`qwen3-coder:480b-cloud`** for answer generation. This choice helps reduce dependence on the user’s local hardware, since larger models usually require more resources to run directly on the machine. [registry.ollama](https://registry.ollama.ai/blog/cloud-models)
+
+The `llama3.1` model is also downloaded as a local alternative for answer generation, in case you want to adapt or test the project with a model running in your own environment.
+
+## Authentication for cloud model usage
+
+To use the cloud model, you will need to create an **Ollama** account and generate an API key to configure access in the project environment.
+
+## Running the application
+
+After completing the steps above, your environment will be ready to run the **RAG-based PDF agent**.
+
+In the terminal, run the commands below:
+
+```powershell
+$env:USE_OLLAMA_CLOUD="true"
+$env:OLLAMA_API_KEY="YOUR_KEY_HERE"
+python -m streamlit run app.py
+```
+
+## Note
+
+If you prefer, you can adapt the project to use only a local model in the answer generation stage.
+
+Just change the workflow in the terminal as follows:
+
+```powershell
+$env:USE_OLLAMA_CLOUD="false"
+python -m streamlit run app.py
+```
+
+This way, the local LLM used will be `llama3.1`, making the application run **100% locally**.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
