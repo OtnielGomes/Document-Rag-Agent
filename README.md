@@ -265,7 +265,7 @@ Text
 
 <br/><br/>
 <div align="center">
-    <img src="images/hist_uni.png" alt="Histogram Univariate" width="900" height="750">
+    <img src="images/hist_uni.png" alt="" width="900" height="750">
   </a>
 </div>
 <br/>
@@ -274,7 +274,7 @@ Text
 
 <br/><br/>
 <div align="center">
-    <img src="images/box_uni.png" alt="Box Plot Univariate" width="900" height="750">
+    <img src="images/box_uni.png" alt=" " width="900" height="750">
   </a>
 </div>
 <br/>
@@ -287,7 +287,7 @@ Text
 
 <br/><br/>
 <div align="center">
-    <img src="images/count_uni.png" alt="Count Plot Univariate" width="900" height="750">
+    <img src="images/count_uni.png" alt="" width="900" height="750">
   </a>
 </div>
 <br/>
@@ -296,7 +296,7 @@ Text
 
 <br/><br/>
 <div align="center">
-    <img src="images/target_count.png" alt="Target Count Univariate" width="900" height="500">
+    <img src="images/target_count.png" alt="" width="900" height="500">
   </a>
 </div>
 <br/>
@@ -307,7 +307,7 @@ Text
 
 <br/><br/>
 <div align="center">
-    <img src="images/corr_bi.png" alt="Correlation Bivariate" width="900" height="900">
+    <img src="images/corr_bi.png" alt="" width="900" height="900">
   </a>
 </div>
 <br/>
@@ -319,7 +319,7 @@ Text
 ---
 <br/><br/>
 <div align="center">
-    <img src="images/hist_bi.png" alt="Histogram Bivariate width="500" height="900">
+    <img src="images/hist_bi.png" alt="" width="500" height="900">
   </a>
 </div>
 <br/>
@@ -327,7 +327,7 @@ Text
 ---
 <br/><br/>
 <div align="center">
-    <img src="images/count_bi.png" alt="Count Plot Bivariate width="500" height="900">
+    <img src="images/count_bi.png" alt=""="500" height="900">
   </a>
 </div>
 <br/>
@@ -338,7 +338,7 @@ Text
 ---
 <br/><br/>
 <div align="center">
-    <img src="images/num_test.png" alt="Numerical Test Bivariate width="700" height="550">
+    <img src="images/num_test.png" alt="" width="700" height="550">
   </a>
 </div>
 <br/>
@@ -346,7 +346,7 @@ Text
 ---
 <br/><br/>
 <div align="center">
-    <img src="images/cat_test.png" alt="Categorical Test Bivariate width="350" height="275">
+    <img src="images/cat_test.png" alt="" width="350" height="275">
   </a>
 </div>
 <br/>
@@ -355,7 +355,7 @@ Text
 ---
 <br/><br/>
 <div align="center">
-    <img src="images/multi.png" alt="Multi Analysis width="550" height="900">
+    <img src="images/multi.png" alt="" width="550" height="900">
   </a>
 </div>
 <br/>
@@ -388,7 +388,7 @@ Text
 ---
 <br/>
 <div align="center">
-    <img src="images/scores_models.png" alt="Scores Models" width="900" height="750">
+    <img src="images/scores_models.png" alt="" width="900" height="750">
   </a>
 </div>
 <br/>
@@ -405,7 +405,7 @@ Text
 ---
 <br/>
 <div align="center">
-    <img src="images/evaluation.png" alt="Evaluation" width="550" height="1500">
+    <img src="images/evaluation.png" alt="" width="550" height="1500">
   </a>
 </div>
 <br/>
@@ -413,7 +413,7 @@ Text
 ---
 <br/>
 <div align="center">
-    <img src="images/probabilities.png" alt="Probabilities" width="900" height="900">
+    <img src="images/probabilities.png" alt="" width="900" height="900">
   </a>
 </div>
 <br/>
@@ -422,7 +422,7 @@ Text
 ---
 <br/>
 <div align="center">
-    <img src="images/customer_inter.png" alt="customer inter" width="900" height="750">
+    <img src="images/customer_inter.png" alt="" width="900" height="750">
   </a>
 </div>
 <br/>
@@ -430,7 +430,7 @@ Text
 ---
 <br/>
 <div align="center">
-    <img src="images/shap_val.png" alt="shap values" width="900" height="750">
+    <img src="images/shap_val.png" alt="" width="900" height="750">
   </a>
 </div>
 <br/>
@@ -438,7 +438,7 @@ Text
 ---
 <br/>
 <div align="center">
-    <img src="images/shap_val_1.png" alt="shap  values 1" width="900" height="750">
+    <img src="images/shap_val_1.png" alt="" width="900" height="750">
   </a>
 </div>
 <br/>
@@ -463,14 +463,14 @@ Text
 
 <br/>
 <div align="center">
-    <img src="images/function_deploy.png" alt="Deploy Non-Churn Demo" width="550" height="250">
+    <img src="images/function_deploy.png" alt="" width="550" height="250">
 </div>
 
 ---
 
 <br/>
 <div align="center">
-    <img src="images/output_deploy.png" alt="Deploy Churn Demo" width="550" height="550">
+    <img src="images/output_deploy.png" alt="" width="550" height="550">
 </div>
 
 
@@ -482,13 +482,13 @@ Text
 
 ## Roadmap
 
-- [Text](https://github.com/OtnielGomes/Churn-Prediction-Credit-Card/blob/main/notebooks/0_EDA.ipynb)
-- [Text](https://github.com/OtnielGomes/Churn-Prediction-Credit-Card/blob/main/notebooks/1_Modeling.ipynb)
+- [Aplication](https://github.com/OtnielGomes/Document-Rag-Agent/blob/main/app.py)
+- [Evaluation Metrics](https://github.com/OtnielGomes/Document-Rag-Agent/blob/main/scripts/analyze_metrics.py)
 
 
 <br/>
 
-See the [open issues](https://github.com/OtnielGomes/Churn-Prediction-Credit-Card/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/OtnielGomes/Document-Rag-Agent/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -506,8 +506,8 @@ If you have a suggestion that would make this better, please fork the repo and c
 ### Top contributors:
 
 <br/>
-<a href="https://github.com/OtnielGomes/Churn-Prediction-Credit-Card/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=OtnielGomes/Churn-Prediction-Credit-Card" alt="contrib.rocks image" />
+<a href="https://github.com/OtnielGomes/Document-Rag-Agent/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=OtnielGomes/Document-Rag-Agent" alt="contrib.rocks image" />
 </a>
 
 
@@ -516,7 +516,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 
 ## License
 
-Distributed under the MIT License. See [`LICENSE.txt`](https://github.com/OtnielGomes/Churn-Prediction-Credit-Card/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [`LICENSE.txt`](https://github.com/OtnielGomes/Document-Rag-Agent/blob/main/LICENSE) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
