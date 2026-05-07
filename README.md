@@ -70,8 +70,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+<br/>
+
 ### RAG-Based Question Answering System
----
 
 I developed a question answering system for **PDF** documents using **RAG (Retrieval-Augmented Generation)**, with a focus on retrieving relevant content snippets and generating more accurate answers based on the document context.
 
@@ -79,15 +80,9 @@ The project was built with **Python**, **Streamlit**, **LangChain**, **ChromaDB*
 
 The system also included **manual evaluation** steps and **prompt rules** designed to reduce hallucinations and improve the reliability of the generated answers.
 
-
 <br/>
-
----
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<br/>
 
 ## Built With
 <br/>
@@ -113,32 +108,37 @@ git clone https://github.com/OtnielGomes/Document-Rag-Agent
 ```
 <br/>
 
-### Pre-requisites
+### 📌Development and Execution Environment
 
-> 📌 **This entire project was built using Databricks Free Edition**.
 
----
+The project was developed in **Visual Studio Code**, which was used as the main environment for programming, file organization, and application execution.
 
-### Ollama instaltion
+To run the project locally, it is recommended to have **VS Code** installed to open, edit, and run the code, as well as **Ollama Desktop**, which is responsible for making the **embedding** model and the answer generation model available locally for the application.
 
-text
+However, the project is also compatible with other environments, such as **Windows PowerShell**, as long as **Python** is previously installed.
 
----
+Below are the download and installation links for **VS Code** and **Ollama Desktop**:
 
-### Links
+- [![VSCode][VSCode]][VSCode-url]
+- [![Ollama][Ollama]][Ollama-url]
 
-#### 1. Go to:  
-[Ollama](https://ollama.com)  
-#### 2. 
-#### 3. 
+<br/>
 
----
+### Installation of Libraries
 
-### configs
+Open the terminal and run the following command to install the project libraries:
 
-### Text
-- Text
-- Text
+`python -m pip install -r requirements.txt`
+
+<br/>
+
+### Installation of Models
+
+Open the terminal and run the following command to install the project libraries:
+
+`python -m pip install -r requirements.txt`
+
+<br/>
 
 ### Text
 - Text
