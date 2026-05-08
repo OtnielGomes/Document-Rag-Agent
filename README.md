@@ -206,6 +206,8 @@ This way, the local LLM used will be `llama3.1`, making the application run **10
 
 ## The Project
 
+[![Ver demonstração](https://github.com/OtnielGomes/Document-Rag-Agent/blob/main/images/pdf1.png)](https://canva.link/zjmai0hdpe9v8lf)
+
 <br/>
 
 ## 1 - Text
