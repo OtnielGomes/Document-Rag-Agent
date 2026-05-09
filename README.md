@@ -19,51 +19,13 @@
     <br/>
     <a href="https://github.com/OtnielGomes/Document-Rag-Agent/tree/main/src"><strong>Explore the Docs and Functions »</strong></a>
     <br/><br/>
-    <a href="https://github.com/OtnielGomes/Document-Rag-Agent/blob/main/app.py">View app.py</a>
+    <a href="https://github.com/OtnielGomes/Document-Rag-Agent/tree/main/images">Images of Project</a>
     ·
     <a href="https://github.com/OtnielGomes/Document-Rag-Agent/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
     <a href="https://github.com/OtnielGomes/Document-Rag-Agent/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
-
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <br>
-  <summary>Table of Contents</summary>
-  <br/>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#pre-requisites">Pre-requisites</a></li>
-        <li><a href="#installation-of-libraries">Installation of libraries</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#the-project">The Project</a></li>
-      <ul>
-        <li><a href="#1---business-understanding">1 - Business Understanding</a></li>
-        <li><a href="#2---data-understanding">2 - Data Understanding</a></li>
-        <li><a href="#3---data-preparation">3 - Data Preparation</a></li>
-        <li><a href="#4---modeling">4 - Modeling</a></li>
-        <li><a href="#5---evaluation">5 - Evaluation</a></li>
-        <li><a href="#6---deployment">6 - Deployment</a></li>
-      </ul>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
 
 <br/>
 
