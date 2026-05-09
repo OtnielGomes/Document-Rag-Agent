@@ -72,7 +72,7 @@
 
 <br/>
 
-### RAG-Based Question Answering System
+## RAG-Based Question Answering System
 
 I developed a question answering system for **PDF** documents using **RAG (Retrieval-Augmented Generation)**, with a focus on retrieving relevant content snippets and generating more accurate answers based on the document context.
 
@@ -220,7 +220,9 @@ The entire process is recorded in the video below:
 
 ## Application Operation
 
-### Loading PDF
+<br/>
+
+## Loading PDF
 
 <br/><br/>
 <div align="left">
@@ -229,7 +231,7 @@ The entire process is recorded in the video below:
 </div>
 <br/>
 
-### Asking The Agent
+## Asking The Agent
 
 <br/><br/>
 <div align="left">
@@ -238,7 +240,7 @@ The entire process is recorded in the video below:
 </div>
 <br/>
 
-### Assessing the latency and functioning of the agent
+## Assessing the latency and functioning of the agent
 
 <br/><br/>
 <div align="left">
