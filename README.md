@@ -218,32 +218,33 @@ The entire process is recorded in the video below:
 
 <br/>
 
-## 1 - Text
----
+## Application Operation
 
-### Text
+### Loading PDF
 
-
-Text
-
----
+<br/><br/>
+<div align="left">
+    <img src="images/pdf1.png" alt="Loading PDF" width="500" height="900">
+  </a>
+</div>
+<br/>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <br/>
 
-## 2 - Text
+### Asking The Agent
 
----
+<br/><br/>
+<div align="left">
+    <img src="images/question7.png" alt="Asking The Agent" width="700" height="900">
+  </a>
+</div>
+<br/>
 
-### Text
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-> Text
-
----
-
-### Text
-- **Text**: `Text`
+<br/>
 
 ---
 
