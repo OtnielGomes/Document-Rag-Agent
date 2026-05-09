@@ -206,6 +206,14 @@ This way, the local LLM used will be `llama3.1`, making the application run **10
 
 ## The Project
 
+I conducted an initial test of the project using my resume in **PDF** format as the knowledge base.
+
+After uploading the file through the **Streamlit** interface, the system extracted the content, processed the document, and enabled question answering based on the information contained in the PDF.
+
+This workflow also made it possible to manually evaluate the **answer accuracy** and the **application latency**.
+
+The entire process is recorded in the video below:
+
 [![Demonstration](https://github.com/OtnielGomes/Document-Rag-Agent/blob/main/images/video.png)](https://canva.link/zjmai0hdpe9v8lf)
 
 <br/>
