@@ -34,7 +34,7 @@
 
 <br/>
 
-## RAG-Based Question Answering System
+### RAG-Based Question Answering System
 
 I developed a question answering system for **PDF** documents using **RAG (Retrieval-Augmented Generation)**, with a focus on retrieving relevant content snippets and generating more accurate answers based on the document context.
 
@@ -70,7 +70,7 @@ git clone https://github.com/OtnielGomes/Document-Rag-Agent
 ```
 <br/>
 
-## Development and Execution Environment
+### Development and Execution Environment
 
 
 The project was developed in **Visual Studio Code**, which was used as the main environment for programming, file organization, and application execution.
@@ -86,7 +86,7 @@ Below are the download and installation links for **VS Code** and **Ollama Deskt
 
 <br/>
 
-## Installation of Libraries
+### Installation of Libraries
 
 Open the terminal and run the following command to install the project libraries:
 
@@ -94,7 +94,7 @@ Open the terminal and run the following command to install the project libraries
 
 <br/>
 
-## Ollama Setup
+### Ollama Setup
 
 Start **Ollama Desktop** and then return to the terminal to download the models used in the project.
 
@@ -107,7 +107,7 @@ ollama pull llama3.1
 ollama list
 ```
 
-## Models used
+### Models used
 
 In this project, we use **one local embedding model** and **two models for answer generation**.
 
@@ -126,17 +126,17 @@ The `qwen3-coder:480b-cloud` model is a cloud-based option designed for coding t
 
 The `llama3.1` model is a general-purpose language model available in Ollama for local execution. [ollama](https://ollama.com/library/llama3.1)
 
-## Project workflow
+### Project workflow
 
 The main workflow of this project was designed to use **`qwen3-coder:480b-cloud`** for answer generation. This choice helps reduce dependence on the user’s local hardware, since larger models usually require more resources to run directly on the machine. [registry.ollama](https://registry.ollama.ai/blog/cloud-models)
 
 The `llama3.1` model is also downloaded as a local alternative for answer generation, in case you want to adapt or test the project with a model running in your own environment.
 
-## Authentication for cloud model usage
+### Authentication for cloud model usage
 
 To use the cloud model, you will need to create an **Ollama** account and generate an API key to configure access in the project environment.
 
-## Running the application
+### Running the application
 
 After completing the steps above, your environment will be ready to run the **RAG-based PDF agent**.
 
@@ -148,7 +148,7 @@ $env:OLLAMA_API_KEY="YOUR_KEY_HERE"
 python -m streamlit run app.py
 ```
 
-## Note
+### Note
 
 If you prefer, you can adapt the project to use only a local model in the answer generation stage.
 
@@ -184,7 +184,7 @@ The entire process is recorded in the video below:
 
 <br/>
 
-## Loading PDF
+### Loading PDF
 
 <br/><br/>
 <div align="left">
@@ -193,7 +193,7 @@ The entire process is recorded in the video below:
 </div>
 <br/>
 
-## Asking The Agent
+### Asking The Agent
 
 <br/><br/>
 <div align="left">
@@ -202,7 +202,7 @@ The entire process is recorded in the video below:
 </div>
 <br/>
 
-## Assessing the latency and functioning of the agent
+### Assessing the latency and functioning of the agent
 
 <br/><br/>
 <div align="left">
