@@ -90,7 +90,9 @@ Below are the download and installation links for **VS Code** and **Ollama Deskt
 
 Open the terminal and run the following command to install the project libraries:
 
-`python -m pip install -r requirements.txt`
+```bash
+python -m pip install -r requirements.txt
+```
 
 <br/>
 
